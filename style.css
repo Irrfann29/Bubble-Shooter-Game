@@ -26,6 +26,7 @@ html,body{
     border-radius: 15px;
     background: transparent;
     overflow: hidden;
+    border: 2px solid black;
 }
 #upperPanel{
     height: 100px;
@@ -34,6 +35,7 @@ html,body{
     justify-content: center;
     gap: 40px;
     color: white;
+    padding-top: 25px;
 }
 .box{
     height: 55px;
@@ -60,11 +62,13 @@ html,body{
 }
 #mainSection{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
 }
 #numbers{
-    background: #000;
+    background: rgb(34, 34, 34);
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -72,7 +76,13 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:43px ;
-    font-weight: 500;
+    font-size:35px ;
+    font-weight: 100;
+    border: 1px solid rgb(255, 255, 255,0.3);
+    cursor: pointer;
+    
+}
+#numbers:hover{
+    background: rgb(255, 255, 255,0.2);
 }
 
