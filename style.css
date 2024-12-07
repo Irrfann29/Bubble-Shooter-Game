@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 html,body{
     height: 100%;
@@ -14,8 +15,6 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
     height: 100%;
     width: 100%;
     
@@ -23,31 +22,57 @@ html,body{
 #panel{
     height: 80%;
     width: 80%;
-    margin: auto;
     box-shadow: rgba(0, 0, 0, 0.50) 0px 20px 25px;
     border-radius: 15px;
-    
     background: transparent;
+    overflow: hidden;
 }
 #upperPanel{
     height: 100px;
-    background-color: antiquewhite;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
+    color: white;
 }
 .box{
-    height: 40px;
-    width: 40px;
+    height: 55px;
+    width: 55px;
     background-color: #0F2027;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background: transparent;
 }
-.elements{
+.elements {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 30px;
+    font-size: 20px;
     
 
+}
+#mainSection{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+#numbers{
+    background: #000;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:43px ;
+    font-weight: 500;
 }
 
