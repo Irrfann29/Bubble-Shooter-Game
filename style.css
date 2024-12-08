@@ -5,13 +5,14 @@
     color: white;
 }
 html,body{
+    color-scheme: dark;
     height: 100%;
     width: 100%;
     
     
 }
 #container{
-    background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+    background: linear-gradient(to right, #5d4157, #a8caba); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,9 +25,10 @@ html,body{
     width: 80%;
     box-shadow: rgba(0, 0, 0, 0.50) 0px 20px 25px;
     border-radius: 15px;
-    background: transparent;
+    background-color: #111111; 
     overflow: hidden;
     border: 2px solid black;
+
 }
 #upperPanel{
     height: 100px;
@@ -68,7 +70,7 @@ html,body{
     margin: 20px;
 }
 #numbers{
-    background: rgb(0, 0, 0);
+    background: transparent;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -78,9 +80,10 @@ html,body{
     justify-content: center;
     font-size:35px ;
     font-weight: 100;
-    border: 1px solid rgb(255, 255, 255,0.3);
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: rgb(19, 164, 221);
+    color:black;
     
 }
 #numbers:hover{
