@@ -1,3 +1,7 @@
+var randomVal = 0;
+var score = 0;
+var runTime = 6;
+
 function ranVal() {
     let rep = "";
     let ranNum = Math.floor(Math.random() * 10)
@@ -7,25 +11,48 @@ function ranVal() {
     }
     document.querySelector("#mainSection").innerHTML = rep;
 }
+
 function timer() {
-    let timer = document.querySelector("#timer");
-    let runTime = 11;
     var timeUp = setInterval(function () {
 
         if (runTime > 0) {
             runTime--;
-            timer.textContent = runTime;
+            document.querySelector("#timer").textContent = runTime;
             
         }
         else{
-            clearInterval(timeUp)
+            clearInterval(timeUp);
+            document.querySelector("#mainSection").innerHTML = `<h1>Game Over </h2>`
+            document.querySelector("#mainSection").style.fontColor = "black"
         }
 
     }, 1000);
 }
 function hitBtn(){
-    let randomVal = Math.floor(Math.random()*10);
+    randomVal = Math.floor(Math.random()*10);
     document.querySelector("#hitBox").textContent = randomVal;
+
+}
+function incScore (){
+    score+=5;
+    document.querySelector("#incScore").textContent = score;
+
+}
+
+document.querySelector("#mainSection").addEventListener("click",function(detail){
+    let match = Number(detail.target.innerHTML);
+    if (randomVal === match){
+        incScore();
+        ranVal();
+        hitBtn()
+        timer()
+        
+    }
+    
+    
+    
+})
+function updScore(){
 
 }
 
@@ -33,4 +60,3 @@ function hitBtn(){
 
 hitBtn()
 ranVal()
-timer()
