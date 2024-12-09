@@ -12,7 +12,7 @@ html,body{
     
 }
 #container{
-    background: linear-gradient(to right, #5d4157, #a8caba); 
+    background-color: rgba(156, 238, 238, 0.8); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@ html,body{
     width: 80%;
     box-shadow: rgba(0, 0, 0, 0.50) 0px 20px 25px;
     border-radius: 15px;
-    background-color: #111111; 
+    background-color: rgb(109, 194, 228); 
     overflow: hidden;
     border: 2px solid black;
 
@@ -36,14 +36,14 @@ html,body{
     align-items: center;
     justify-content: center;
     gap: 40px;
-    color: white;
+    color: black;
     padding-top: 25px;
 }
 .box{
     height: 55px;
     width: 55px;
     background-color: #0F2027;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,12 +81,12 @@ html,body{
     font-size:35px ;
     font-weight: 100;
     cursor: pointer;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    background-color: rgb(19, 164, 221);
-    color:black;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #222222;
+    color:white;
     
 }
 #numbers:hover{
-    background: rgb(255, 255, 255,0.1);
+    background: #444444;
 }
 
