@@ -1,7 +1,7 @@
 var randomVal = 0;
 var score = 0;
 var runTime = 6;
-
+var timeUp;
 function ranVal() {
     let rep = "";
     let ranNum = Math.floor(Math.random() * 10)
@@ -13,7 +13,8 @@ function ranVal() {
 }
 
 function timer() {
-    var timeUp = setInterval(function () {
+    var runTime = 60;
+    timeUp = setInterval(function () {
 
         if (runTime > 0) {
             runTime--;
@@ -42,10 +43,11 @@ function incScore (){
 document.querySelector("#mainSection").addEventListener("click",function(detail){
     let match = Number(detail.target.innerHTML);
     if (randomVal === match){
+        
         incScore();
         ranVal();
         hitBtn()
-        timer()
+        
         
     }
     
@@ -56,7 +58,7 @@ function updScore(){
 
 }
 
-
+timer()
 
 hitBtn()
 ranVal()
