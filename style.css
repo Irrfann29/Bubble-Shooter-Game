@@ -8,8 +8,6 @@ html,body{
     color-scheme: dark;
     height: 100%;
     width: 100%;
-    
-    
 }
 #container{
     background-color: rgba(156, 238, 238, 0.8); 
@@ -17,8 +15,7 @@ html,body{
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
-    
+    width: 100%;   
 }
 #panel{
     height: 80%;
@@ -28,7 +25,6 @@ html,body{
     background-color: rgb(109, 194, 228); 
     overflow: hidden;
     border: 2px solid black;
-
 }
 #upperPanel{
     height: 100px;
@@ -59,8 +55,6 @@ html,body{
     align-items: center;
     gap: 10px;
     font-size: 20px;
-    
-
 }
 #mainSection{
     display: flex;
@@ -83,8 +77,7 @@ html,body{
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #222222;
-    color:white;
-    
+    color:white;  
 }
 #numbers:hover{
     background: #444444;
