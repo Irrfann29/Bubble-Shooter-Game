@@ -22,8 +22,18 @@ function timer() {
         }
         else{
             clearInterval(timeUp);
-            document.querySelector("#mainSection").innerHTML = `<h1>Game Over </h2>`
-            document.querySelector("#mainSection").style.fontColor = "black"
+            let over = document.querySelector("#mainSection");
+            over.innerHTML="";
+            let gameOver = document.createElement("div");
+            gameOver.id = "popUp";
+            over.appendChild(gameOver);
+            let mainMsg = document.createElement("h1");
+            let scoreMsg = document.createElement("h3")
+            mainMsg.innerHTML = "GameOver"
+            scoreMsg.innerHTML=`Your Score Is ${score}`
+            gameOver.appendChild(mainMsg)
+            gameOver.appendChild(scoreMsg)
+            
         }
     }, 1000);
 }
