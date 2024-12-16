@@ -22,7 +22,7 @@ function timer() {
         }
         else{
             clearInterval(timeUp);
-            let over = document.querySelector("#mainSection");
+            let over = document.querySelector("#container");
             over.innerHTML="";
             let gameOver = document.createElement("div");
             gameOver.id = "popUp";
